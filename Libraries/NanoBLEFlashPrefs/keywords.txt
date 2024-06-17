@@ -1,0 +1,26 @@
+###########################################
+# Syntax Coloring Map For NanoBLEFlashPrefs
+###########################################
+
+###########################################
+# Datatypes (KEYWORD1)
+###########################################
+
+NanoBLEFlashPrefs	KEYWORD1
+
+###########################################
+# Methods and Functions (KEYWORD2)
+###########################################
+
+writePrefs	KEYWORD2
+readPrefs	KEYWORD2
+deletePrefs	KEYWORD2
+garbageCollection	KEYWORD2
+operationCompleted	KEYWORD2
+errorString	KEYWORD2
+statusString	KEYWORD2
+
+###########################################
+# Constants (LITERAL1)
+###########################################
+
