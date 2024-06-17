@@ -148,7 +148,7 @@ void loop() {
         if (sensor.read_sensor_value(buf, 29)) {
             Serial.println("HM330X read result failed!!");
         } else {
-            pm25 = (buf[4] << 8) | buf[5];
+            pm25 = (buf[12] << 8) | buf[13]; // PM2.5 atmospheric value is stored in buf[12] (high byte) and buf[13] (low byte)
             filteredPM25 = filterData(pm25, pm25Readings, readingsIndex[2], emaValues[2], demaValues[2], 2);
             readingsIndex[2] = (readingsIndex[2] + 1) % AVERAGE_WINDOW;
 
